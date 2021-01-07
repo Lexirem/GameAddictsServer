@@ -9,16 +9,8 @@ const userSchema = new Schema({
     password: String,
     age: String,
     gender: { type: String, enum: ["Male", "Female"] },
-    disponibility: String,
     email: String,
-    languages: String,
-    country: String,
-    city: String,
-    experience: { type: String, enum: ["low", "medium", "high"] },
-    lookingForSailAsCrew: {type:Boolean, default : false},
     image: String,
-    hasBoat: {type:Boolean, default : false},
-    
 }, 
 {
     timestamps: {
